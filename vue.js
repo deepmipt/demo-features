@@ -322,6 +322,22 @@ Kensington Palace said in a statement that the couple is “hugely grateful” f
             let res = `<blockquote class="blockquote">${t1}</blockquote>${((parseFloat(response) >= 0.5) ? '<span class="badge badge-danger">Insult</span>' : '<span class="badge badge-success">Not Insult</span>')}`;
             return res;
         }
+    },
+    {
+        id: 'PROXY',
+        examples: [
+            {text1: 'ya.ru'},
+            {text1: 'https://google.com'},
+            {text1: 'http://ipavlov.ai'}
+        ],
+        url: 'http://192.168.10.231:5000/proxy',
+        about: '',
+        text1Header: 'Enter Text',
+        submitText: 'Classify',
+        lang: 'en',
+        report: function (t1, t2, response) {
+            return `<iframe width="100%" height="100%" srcdoc="${response.replace(/"/g,'&quot;')}">`;
+        }
     }
 ];
 
