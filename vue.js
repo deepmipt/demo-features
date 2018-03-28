@@ -330,7 +330,7 @@ Kensington Palace said in a statement that the couple is “hugely grateful” f
             {text1: 'https://google.com'},
             {text1: 'http://ipavlov.ai'}
         ],
-        url: 'http://192.168.10.231:5000/proxy',
+        url: baseURL + '/answer/proxy',
         about: '',
         text1Header: 'Enter Text',
         submitText: 'Classify',
